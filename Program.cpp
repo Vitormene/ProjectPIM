@@ -74,7 +74,7 @@ struct controle
     char descricao[100];
     char nome[50];
 }logC[200];
-//AQUI DECLARO AS FUNÇÕES A SEREM USADAS
+//AQUI DECLARO AS FUNÃ‡Ã•ES A SEREM USADAS
 int verifica_pos(void);
 int verifica_cod( int cod );
 int opt;
@@ -153,7 +153,7 @@ void menu(){
 	do
     {
 		arq = fopen("arquivo_pim", "w");       
-	    printf("1 - Cadastrar Novo Cliente\n");
+	printf("1 - Cadastrar Novo Cliente\n");
 		fputs("1 - Cadastrar Novo Cliente\n", arq);
         printf("2 - Cliente\n");
 		fputs("2 - Cliente\n", arq);
@@ -162,17 +162,17 @@ void menu(){
         printf("4 - Cadastrar Pedido\n");
 		fputs("4 - Cadastrar Pedido\n", arq);
         printf("5 - Cadastrar Bebidas\n");
-     	fputs("5 - Cadastrar Bebidas\n", arq);
+     		fputs("5 - Cadastrar Bebidas\n", arq);
         printf("6 - Sabores\n");
 		fputs("6 - Sabores\n",arq);
         printf("7 - Cardapio\n");
 		fputs("7 - Cardapio\n", arq);
-		printf("8 - Pizzaiolos\n");
+	printf("8 - Pizzaiolos\n");
 		fputs("8 - Pizzaiolos\n", arq);
         printf("9 - Excluir Pedido\n");
 		fputs("9 - Excluir Pedido\n", arq);
         printf("10 - Reclamacoes\n");
-        fputs("10 - Reclamacoes\n", arq);
+       		fputs("10 - Reclamacoes\n", arq);
         printf("11 - Elogios dos Clientes\n");
  		fputs("11 - Elogios dos Clientes\n", arq);
         printf("12 - Promocoes\n");
@@ -183,8 +183,8 @@ void menu(){
  		fputs("14 - Relatorios\n", arq);
         printf("15 - Sair\n");
  		fputs("15 - Sair\n", arq);
-        printf(" Selecione uma opção: ");
- 		fputs(" Selecione uma opção: ", arq);
+        printf(" Selecione uma opÃ§Ã£o: ");
+ 		fputs(" Selecione uma opÃ§Ã£o: ", arq);
         scanf("%d", &Opcao);fflush(stdin);
         fclose(arq);
 		getchar();
@@ -433,7 +433,7 @@ void cadastroB(){ //CADASTRO BEBIDAS
         gets(logB[i].nomebeb);
         printf("\nDigite o Teor alcoolico: ");
         gets(logB[i].teor);
-        printf("\nDigite o preço: ");
+        printf("\nDigite o preÃ§o: ");
         gets(logB[i].preco);
         printf("\nDigite a quantidade:\n ");
         gets(logB[i].qtd);
@@ -525,7 +525,7 @@ void elogios(){	//ELOGIO
 void promo(){ //PROMOCAO 
 	int i; 
 	do{
-		printf("Ao comprar 2 pizza leve um refrigerante de graça");
+		printf("Ao comprar 2 pizza leve um refrigerante de graÃ§a");
 		printf("Pressione enter para volta ao menu principal");
         opt ==1;
         getchar();  
@@ -690,17 +690,17 @@ void controle() //CONTROLE DE ESTOQUE;
 		switch(opc)
         {
         case 1:
-            puts("Olá, cadastre um item");
+            puts("OlÃ¡, cadastre um item");
 
             for(i=0; i<40; i++)
             {
                 puts("Nome:");
                 gets(logC[i].nome);
                 fflush(stdin);
-                puts("Código:");
+                puts("CÃ³digo:");
                 scanf("%c", &logC[i].cod);
                 fflush(stdin);
-                puts("Descrição:");
+                puts("DescriÃ§Ã£o:");
                 gets(logC[i].descricao);
                 fflush(stdin);
                 puts("Quantidade:");
@@ -709,7 +709,7 @@ void controle() //CONTROLE DE ESTOQUE;
                 puts("Valor da compra:");
                 scanf("%f", &logC[i].compra);
                 fflush(stdin);
-                puts("Preço:");
+                puts("PreÃ§o:");
                 scanf("%f", &logC[i].preco);
                 fflush(stdin);
 
@@ -720,7 +720,7 @@ void controle() //CONTROLE DE ESTOQUE;
                 if(per!=1)
                 {
                     system("cls");
-                    printf("finalização de cadastramento de produto\n");
+                    printf("finalizaÃ§Ã£o de cadastramento de produto\n");
                     break;
                 }
 
@@ -740,7 +740,7 @@ void controle() //CONTROLE DE ESTOQUE;
                 {
                     fflush(stdin);
                     system("cls");
-                    printf("Não foi feito nenhuma venda:\n");
+                    printf("NÃ£o foi feito nenhuma venda:\n");
                     break;
                   } 
 
@@ -759,7 +759,7 @@ void controle() //CONTROLE DE ESTOQUE;
             {
                 fflush(stdin);
 
-                puts("Código do produto:");
+                puts("CÃ³digo do produto:");
                 scanf("%s", &logC[i].cod);
                 fflush(stdin);
 
@@ -797,7 +797,7 @@ void controle() //CONTROLE DE ESTOQUE;
                 if(per!=1)
                 {
                     system("cls");
-                    printf("finalização de cadastramento de produto\n");
+                    printf("finalizaÃ§Ã£o de cadastramento de produto\n");
                     break;
                 }
 
@@ -815,7 +815,7 @@ void controle() //CONTROLE DE ESTOQUE;
 
             for(i=0; i<40; i++)
             {
-        puts("Código do produto:");
+        puts("CÃ³digo do produto:");
 }
 }
 }
