@@ -183,8 +183,8 @@ void menu(){
  		fputs("14 - Relatorios\n", arq);
         printf("15 - Sair\n");
  		fputs("15 - Sair\n", arq);
-        printf(" Selecione uma opcao por favor: ");
- 		fputs(" Selecione uma opcao por favor: ", arq);
+        printf(" Selecione uma opção: ");
+ 		fputs(" Selecione uma opção: ", arq);
         scanf("%d", &Opcao);fflush(stdin);
         fclose(arq);
 		getchar();
